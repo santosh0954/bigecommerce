@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Santosh Jha" />
+  <meta name="description" content="e-mart, online shopping, low cost shopping" />
+  <meta name="keyword" content="online shopping, e-mart, clothes, shoes, electronics, mobile, best offer" />
+  <title>One deals</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body id="to-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-success text-bold">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand ml-0 px-1 font-weight-bold text-success bg-white" style="border-radius: 8px;" href="index.php">E-Mart</a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle cat" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu bg-success mt-1 cat-m" aria-labelledby="navbarDropdown">
+             
+                 <a class='dropdown-item' href="#">Men</a>
+                 <a class='dropdown-item' href="#">Women</a>
+                 <a class='dropdown-item' href="#">Electronics</a>
+                
+            </div>
+          </li>
+        </ul>
+        <!---this is search bar-------->
+        <form class="form-inline my-2 my-lg-0 mx-auto w-75 w-md-100 w-sm-100">
+          <div class="input-group w-75 mx-auto search">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+              <div class="dropdown-menu search-pre">
+                <a class="dropdown-item" href="#">All</a>
+                <a class="dropdown-item" href="#">Men</a>
+                <a class="dropdown-item" href="#">Women</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Electronics</a>
+              </div>
+            </div>
+            <input type="search" class="form-control text-success" aria-label="Text input with dropdown button" placeholder="Search your item here">
+            <div class="input-group-append">
+              <button class="btn  btn-outline-light my-2 my-sm-0 " id="basic-addon2" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!---------this is login account------->
+      <div class="account">
+        <a href="#" data-toggle="modal" data-target=".logIn"><i class="fa fa-sign-in mr-1"></i>Login</a> <span class="text-success">OR</span> <a href="#" data-toggle="modal" data-target=".signUp">Signup</a>
+      </div>
+      <div class="ml-3">
+        <span class="badge badge-warning  text-white text-bold badge-pill">0</span>
+      <a href="#" class="text-white cart-icon"><i class="fa fa-shopping-cart" style="font-size: 120%;"></i> Cart</a>
+      
+      </div>
+    </div>
+  </nav>
+  <!-----------navigation ending------->
+  <main class="container-fluid px-2" style="padding-top: 70px;" >
+
+   <div id="curasel-container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner/banner1.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner11.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner3.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner17.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner5.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner6.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner7.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner8.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/banner9.jpg" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only" id="slider">Next</span>
+      </a>
+    </div>
+    <!--         end carousel -->
+  </div>
+  <!----------This is deals of the day-------------->
+
+  <div class="product deals-of-day container-fluid p-0">
+    <div class="p-header row p-3 mx-auto">
+      <div class="p-titel col-md-10">
+        <h3>Deals of the Day</h3>
+      </div>
+      <div class="col-md-2 text-right">
+        <a href="#" class="btn btn-success text-bold" role="button">View all</a>
+      </div>
+    </div>
+    <!--header-->
+    <div class="row m-auto p-slider p-4">
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/new-launch/mi-redmi-6-pro.jpeg" alt="redmi note 6 pro" class="" /></div>
+          <h6>Redmi note 6 pro</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;11999</s></p>
+          <p class="price">Our Price: &#8377;11500</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/new-launch/mi-redmi-note-7-pro.jpeg" alt="redmi note 7 pro" />
+          </div>
+          <h6>Redmi note 7 pro</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;14999</s></p>
+          <p class="price">Our Price: &#8377;13999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/new-launch/mi-redmi-note-7.jpeg" alt="redmi note 7" />
+          </div>
+          <h6>Redmi note 7</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;10999</s></p>
+          <p class="price">Our Price: &#8377;9999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/new-launch/product7.jpeg" alt="tv" /></div>
+          <h6>Lg 43</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;22999</s></p>
+          <p class="price">Our Price: &#8377;19999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/new-launch/realme-3.jpeg" alt="realme" /></div>
+          <h6>Realme 3</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;13999</s></p>
+          <p class="price">Our Price: &#8377;12999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/new-launch/samsung-galaxy-a30.jpeg" alt="samsung a30" />
+          </div>
+          <h6>Samsung a30</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;16999</s></p>
+          <p class="price">Our Price: &#8377;14999</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!---product slider end-->
+  </div>
+  <!---------This is first offer section----------------->
+
+  <div class="container-fluid p-0 offer">
+    <div class="row mx-auto no-gutters">
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer1.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer2.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer3.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      
+    </div>
+    <div class="row mx-auto no-gutters">
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer4.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer5.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer6.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+    </div>
+
+    <!---product slider end-->
+  </div>
+  <!-------------this is  Trending offer secton----------------->
+
+  <div class="product tranding-offers container-fluid p-0">
+    <div class="p-header row p-3 mx-auto">
+      <div class="p-titel col-md-10">
+        <h3>Trending Offers</h3>
+      </div>
+      <div class="col-md-2 text-right">
+        <a href="#" class="btn btn-success  text-bold" role="button">View all</a>
+      </div>
+    </div>
+    <!--header-->
+    <div class="p-slider">
+      <div class="row m-auto p-slider p-4">
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/trending/bottle.jpeg" alt="bottle" class="" /></div>
+            <p class="list-price text-danger">List price: <s>&#8377;130</s></p>
+            <p class="price">Our Price: &#8377;99</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/trending/speaker.jpg" alt="speaker" /></div>
+            <h6>JBL speaker</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;2999</s></p>
+            <p class="price">Our Price: &#8377;1999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/trending/shoes.jpeg" alt="shoes" /></div>
+            <h6>Casual Shoes</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;1699</s></p>
+            <p class="price">Our Price: &#8377;1399</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/trending/miband.jpeg" alt="miband" /></div>
+            <h6>Mi band 3</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;1999</s></p>
+            <p class="price">Our Price: &#8377;1299</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/trending/keychain.jpeg" alt="keychain" /></div>
+            <h6>Keychain</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;169</s></p>
+            <p class="price">Our Price: &#8377;99</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/trending/memmorycard.jpeg" alt="memmorycard" /></div>
+            <h6>Samsung class 10</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;399</s></p>
+            <p class="price">Our Price: &#8377;349</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!---product slider end-->
+  </div>
+  <!-------- featured product------------>
+
+  <div class="product featured-brand container-fluid p-0">
+    <div class="p-header row p-3 m-auto">
+      <div class="p-titel col-md-10">
+        <h3>Featured Brand</h3>
+      </div>
+      <div class="col-md-2 text-right">
+        <a href="#" class="btn btn-success  text-bold" role="button">View all</a>
+      </div>
+    </div>
+    <div class="row m-auto p-slider p-4">
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/feature/fridge2.jpeg" alt="fridge" class="" /></div>
+          <h6>Samsung fridge</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;15999</s></p>
+          <p class="price">Our Price: &#8377;14999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/feature/leptop1.jpeg" alt="leptop" /></div>
+          <h6>Lenovo i3</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;32999</s></p>
+          <p class="price">Our Price: &#8377;29999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/feature/product2.jpeg" alt="shoes" /></div>
+          <h6>VU 49inc</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;35999</s></p>
+          <p class="price">Our Price: &#8377;32999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/feature/product3.jpeg" alt="tv" /></div>
+          <h6>LG smart TV</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;29999</s></p>
+          <p class="price">Our Price: &#8377;26599</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/feature/punta-superior-series.jpeg" alt="computer" />
+          </div>
+          <h6>Punta pantium</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;26999</s></p>
+          <p class="price">Our Price: &#8377;24999</p>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <a href="#">
+          <div class="product-img"><img src="images/feature/washing1.jpeg" alt="washing machine" /></div>
+          <h6>Lg semi automatic</h6>
+          <p class="list-price text-danger">List price: <s>&#8377;22999</s></p>
+          <p class="price">Our Price: &#8377;18999</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!---product slider end-->
+  </div>
+  <!-------This is second offers section-------------->
+  <div class="container-fluid p-0 offer">
+    <div class="row mx-auto no-gutters">
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer7.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer8.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer9.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+    </div>
+    <div class="row mx-auto no-gutters">
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer14.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer11.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+      <div class="col-md-4">
+        <a href="#"><img src="images/offer/offer12.jpg" alt="offer" class="img-fluid" /></a>
+      </div>
+    </div>
+  </div>
+  <!---------------This is Best brand section----------------->
+
+  <div class="product brand-best container-fluid p-0">
+    <div class="p-header row p-3 mx-auto">
+      <div class="p-titel col-md-10">
+        <h3>Best Brands on This Price</h3>
+      </div>
+      <div class="col-md-2 text-right">
+        <a href="#" class="btn btn-success  text-bold" role="button">View all</a>
+      </div>
+    </div>
+    <!--header-->
+    <div class="p-slider">
+      <div class="row m-auto p-slider p-4">
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/best-selling/ac1.jpeg" alt="ac" class="" /></div>
+            <h6>Voltas 1.5t</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;39999</s></p>
+            <p class="price">Our Price: &#8377;37999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/best-selling/ac2.jpeg" alt="ac" /></div>
+            <h6>Samsung 2t</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;42999</s></p>
+            <p class="price">Our Price: &#8377;39999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/best-selling/product1.jpeg" alt="tv" /></div>
+            <h6>Intex 32</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;22999</s></p>
+            <p class="price">Our Price: &#8377;14999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/best-selling/product4.jpeg" alt="tv" /></div>
+            <h6>Samsung smart tv 42</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;26999</s></p>
+            <p class="price">Our Price: &#8377;23999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/best-selling/product5.jpeg" alt="tv" /></div>
+            <h6>Lg Smart Tv</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;17999</s></p>
+            <p class="price">Our Price: &#8377;13999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/best-selling/guitar1.jpeg" alt="guitar" /></div>
+            <h6>Acoustic Guitar</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;18999</s></p>
+            <p class="price">Our Price: &#8377;11999</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!---product slider end-->
+  </div>
+  <!-----------------This is limited time offers section---------------->
+
+  <div class="product limited-tm container-fluid p-0">
+    <div class="p-header row p-3 mx-auto">
+      <div class="p-titel col-md-10">
+        <h3>Limited Time Offers</h3>
+      </div>
+      <div class="col-md-2 text-right">
+        <a href="#" class="btn btn-success  text-bold" role="button">View all</a>
+      </div>
+    </div>
+    <!--header-->
+    <div class="p-slider">
+      <div class="row m-auto p-slider p-4">
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/limited/asus.jpeg" alt="leptop" class="" /></div>
+            <h6>Asus i3</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;25999</s></p>
+            <p class="price">Our Price: &#8377;24999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/limited/core-i5.jpg" alt="leptop" /></div>
+            <h6>Dell i5</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;49999</s></p>
+            <p class="price">Our Price: &#8377;33999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/limited/gaming-laptops.jpeg" alt="gaming leptop" />
+            </div>
+            <h6>Predator gaming laptops</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;59999</s></p>
+            <p class="price">Our Price: &#8377;49999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/limited/hp-na-thin.jpeg" alt="leptop" /></div>
+            <h6>Hp Spector</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;79999</s></p>
+            <p class="price">Our Price: &#8377;74999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/limited/hp-pantium.jpeg" alt="leptop" /></div>
+            <h6>Hp pantium 520</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;24999</s></p>
+            <p class="price">Our Price: &#8377;21999</p>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+          <a href="#">
+            <div class="product-img"><img src="images/limited/lenevo-r5.jpeg" alt="lenevo leptop" /></div>
+            <h6>Lenevo r5</h6>
+            <p class="list-price text-danger">List price: <s>&#8377;29999</s></p>
+            <p class="price">Our Price: &#8377;24999</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!---product slider end-->
+  </div>
+  <div class="row mx-auto offer no-gutters">
+    <div class="col-md-4">
+      <a href="#"><img src="images/offer/offer12.jpg" alt="offer" class="img-fluid" /></a>
+    </div>
+    <div class="col-md-4">
+      <a href="#"><img src="images/offer/offer15.jpg" alt="offer" class="img-fluid" /></a>
+    </div>
+    <div class="col-md-4">
+      <a href="#"><img src="images/offer/offer14.jpg" alt="offer" class="img-fluid" /></a>
+    </div>
+  </div>
+</main>
+ <div class="container-fluid to-top text-center p-0 mt-2"><a href="#to-top">Back to Top</a></div>
+<footer id="myFooter" class="bg-success text-white pt-4">
+
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4"><a class="brand" href="index.php"><img class="brand-logo-light" src="images/ecommerce2.png" alt="" width="140" height="auto"></a>
+          <p>This is Ecommerce website where you can buy clothes by Categories like Men and Women, and you can
+            also buy Electronics such as Mobile, Tv, Fridge, Washing machine etc.</p>
+          <!-- Rights-->
+          <p class="rights"><span>©  </span>
+            <span class="copyright-year"><?php echo date('Y'); ?> </span><span>One deals</span><span>. </span><span>All
+              Rights Reserved.</span></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Contacts</h5>
+        <dl class="contact-list">
+          <dt>Address:</dt>
+          <dd>Sudamapur, Varanasi, Santosh Jha</dd>
+        </dl>
+        <dl class="contact-list">
+          <dt>Email:</dt>
+          <dd><a href="mailto:santosh0954jha@gmail.com" class="text-white">santosh0954jha@gmail.com</a></dd>
+        </dl>
+        <dl class="contact-list">
+          <dt>Phones:</dt>
+          <dd><a href="tel:8601261887" class="text-white">+91 8601261887</a> <span>or</span> <a href="tel:8299519708" class="text-white">+91 8299519708</a>
+          </dd>
+        </dl>
+      </div>
+      <div class="col-md-4 col-xl-3">
+        <h5>Links</h5>
+        <ul class="nav-list list-unstyled">
+          <li><a href="#" class="text-white">About</a></li>
+          <li><a href="#" class="text-white">Help</a></li>
+          <li><a href="#" class="text-white">Blog</a></li>
+          <li><a href="#" class="text-white">Contacts</a></li>
+          <li><a href="#" class="text-white">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright ">
+    <p class="text-center">© <?php echo date('Y'); ?> Copyright One deals </p>
+  </div>
+</footer>
+
+<!-----------large model for login ---------------->
+
+<div class="modal fade logIn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content px-5 pb-5 pt-4">
+      <div class="modal-header mb-4 p-0">
+        <h2 class="text-success">Log In</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <form action="login.php" method="post">
+        <div class="form-group">
+          <label for="Email1">Email address</label>
+          <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email" name="login_name"
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="Password1">Password</label>
+          <input type="password" class="form-control" id="Password1" placeholder="Password" name="login_pass">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-success" name="login">Log In</button>
+      </form>
+    </div>
+  </div>
+</div>
+    <div class="modal fade signUp" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-5">
+          <div class="modal-header mb-4 p-0 pb-2">
+            <h2 class="text-success modal-title">Sign Up</h2>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <form action="insert.php" method="post">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="f-name">First Name</label>
+                <input type="text" name="first_name" class="form-control" id="f-name" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="l-name">Last Name</label>
+                <input type="text" name="last_name" class="form-control" id="l-name" placeholder="Last Name">
+              </div>
+            </div>
+              <div class="form-group">
+                <label for="inputEmail4">Email</label>
+                <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" name="sign_password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="c-password"> Confirm Password</label>
+                <input type="password" class="form-control" id="c-password4" placeholder="Confirm Password" name="sign_password_c">
+              </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" name="city" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control" name="state">
+                  <option selected hidden>Choose...</option>
+                  <option value="andhra pradesh">Andhra Pradesh</option>
+                  <option value="arunachal pradesh">Arunachal Pradesh</option>
+                  <option value="assam">Assam</option>
+                  <option value="bihar">Bihar</option>
+                  <option value="chhattisgarh">Chhattisgarh</option>
+                  <option value="goa">Goa</option>
+                  <option value="gujarat">Gujarat</option>
+                  <option value="haryana">Haryana</option>
+                  <option value="himachal pradesh">Himachal Pradesh</option>
+                  <option value="jammu and kashmir">Jammu and Kashmir</option>
+                  <option value="jharkhand">Jharkhand</option>
+                  <option value="karnatka">Karnataka</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="madhya pradesh">Madhya Pradesh</option>
+                  <option value="maharashtra">Maharashtra</option>
+                  <option value="manipur">Manipur</option>
+                  <option value="meghalaya">Meghalaya</option>
+                  <option value="mizoram">Mizoram</option>
+                  <option value="nagaland">Nagaland</option>
+                  <option value="odisha">Odisha</option>
+                  <option value="punjab">Punjab</option>
+                  <option value="rajasthan">Rajasthan</option>
+                  <option value="sikkim">Sikkim</option>
+                  <option value="tamil nadu">Tamil Nadu</option>
+                  <option value="telangana">Telangana</option>
+                  <option value="tripura">Tripura</option>
+                  <option value="uttar pradesh">Uttar Pradesh</option>
+                  <option value="uttarakhand">Uttarakhand</option>
+                  <option value="west bengal">West Bengal</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" name="zip" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree the terms and condition of the onedeals.
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+
+</script>
+
+    </body>
+
+    </html>
